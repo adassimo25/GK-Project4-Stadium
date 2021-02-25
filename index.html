@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Stadium</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+
+<body>
+  <!-- EXTERNAL JS SCRIPTS -->
+  <script src="external-js/jquery-3.5.1.js"></script>
+  <script src="external-js/jquery-ui.js"></script>
+  <script src="external-js/keyboardState.js"></script>
+  <script src="external-js/three.js"></script>
+  <script src="external-js/reflector.js"></script>
+  <script src="external-js/stats.js"></script>
+
+  <div id="fog" style="display: inline-block;">
+    <label for="fogRange">Fog density: </label>
+    <input id="fogRange" type="range" min="1" max="1000" value="25" style="vertical-align: middle;">
+    <input id="fogDensity" disabled style="width: 50px; vertical-align: middle;" />
+    <label for="fogEnabled">enabled:</label>
+    <input id="fogEnabled" type="checkbox" style="vertical-align: middle;" />
+  </div>
+  <div id="StadiumScene"></div>
+  <!-- <div id="stats" style="float: right;"></div> -->
+
+  <!-- MY JS SCRIPTS -->
+  <script src="js/changeShading.js"></script>
+  <script src="js/fog.js"></script>
+  <script src="js/inits.js"></script>
+  <script src="js/keyEvents.js"></script>
+  <script src="js/stadium.js"></script>
+</body>
+
+</html>
